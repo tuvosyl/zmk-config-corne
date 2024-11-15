@@ -177,11 +177,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT       &trans  &kp LCTRL  &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp ESCAPE       &kp CAPSLOCK  &kp HOME  &kp END     &kp UNDERSCORE    &trans  &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP            &kp PAGE_DOWN         &kp INSERT             &trans
-&trans  &kp BACKSPACE    &trans        &trans    &trans      &kp TILDE         &trans  &kp GRAVE  &as PLUS EQUAL   &as DOUBLE_QUOTES SQT  &as PIPE BACKSLASH    &kp DELETE             &trans
-                         &trans        &trans    &trans      &trans            &trans  &trans     &trans           &trans
-                                                                               &trans
+&trans  &none     &kp N7     &kp N8  &kp N9  &kp PAGE_UP      &mmv MOVE_UP     &none     &none     &none   &none      &alt_f4   &trans
+&trans  &none     &kp N4     &kp N5  &kp N6  &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans  &kp CAPS  &kp N1     &kp N2  &kp N3  &kp N0           &mmv MOVE_LEFT   &none     &none     &none   &none      &kp END   &trans
+                  &mkp LCLK  &trans  &trans  &trans           &mmv MOVE_RIGHT  &kp INS   &kp DEL   &trans
             >;
 
             label = "Symbol";
@@ -189,11 +188,10 @@
 
         Modify {
             bindings = <
-&kp LG(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5        &trans  &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0   &trans
-&trans     &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
-&trans     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE      &trans  &kp RIGHT_BRACE    &kp F1           &kp F2             &kp F3         &kp F4         &trans
-                         &trans        &trans        &trans        &trans              &trans  &trans             &trans           &trans
-                                                                                       &trans
+&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
+&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
+&trans  &none      &none      &none         &none      &kp GRAVE    &mmv MOVE_LEFT   &kp UNDER  &none      &kp LBRC  &kp RBRC  &kp PIPE   &trans
+                   &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &kp RET    &trans     &trans
             >;
 
             label = "Modify";
