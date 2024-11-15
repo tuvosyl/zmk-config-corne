@@ -1,16 +1,12 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      remote: urob
+      revision: main
       import: app/west.yml
-    - name: mario-peripheral-animation
-      remote: gpeye
-      revision: main 
   self:
     path: config
+
