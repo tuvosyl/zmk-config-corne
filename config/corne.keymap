@@ -120,10 +120,11 @@
 
         Navi {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T        &mmv MOVE_UP     &kp Y        &kp U  &kp I          &kp O    &kp P     &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F  &kp G        &mmv MOVE_DOWN   &kp H        &kp J  &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V  &kp B        &mmv MOVE_LEFT   &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp LEFT_ALT
-                       &to 1  &kp LEFT_GUI  &mo 2  &kp SPACE    &mmv MOVE_RIGHT  &lt 4 ENTER  &mo 3  &kp BACKSPACE
+&trans  &trans        &trans        &kp HOME          &kp PAGE_UP     &kp C_VOLUME_UP      &trans  &kp C_BRIGHTNESS_INC   &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN    &trans  &kp C_BRIGHTNESS_DEC   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans        &trans        &kp END           &kp PAGE_DOWN   &kp K_MUTE           &trans  &kp C_BRIGHTNESS_AUTO  &trans          &trans          &trans           &trans  &trans
+                      &trans        &trans            &trans          &trans               &trans  &trans                 &trans          &trans
+                                                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
@@ -132,11 +133,11 @@
 
         Symbol {
             bindings = <
-&alt_tab  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                  &to 0      &trans     &trans     &trans    &trans  &trans  &trans  &trans
-                                                             &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT       &trans  &kp LCTRL  &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp ESCAPE       &kp CAPSLOCK  &kp HOME  &kp END     &kp UNDERSCORE    &trans  &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP            &kp PAGE_DOWN         &kp INSERT             &trans
+&trans  &kp BACKSPACE    &trans        &trans    &trans      &kp TILDE         &trans  &kp GRAVE  &as PLUS EQUAL   &as DOUBLE_QUOTES SQT  &as PIPE BACKSLASH    &kp DELETE             &trans
+                         &trans        &trans    &trans      &trans            &trans  &trans     &trans           &trans
+                                                                               &trans
             >;
 
             label = "Symbol";
@@ -144,10 +145,11 @@
 
         Modify {
             bindings = <
-&trans  &none     &kp N7     &kp N8  &kp N9  &kp PAGE_UP      &mmv MOVE_UP     &none     &none     &none   &none      &alt_f4   &trans
-&trans  &none     &kp N4     &kp N5  &kp N6  &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &kp CAPS  &kp N1     &kp N2  &kp N3  &kp N0           &mmv MOVE_LEFT   &none     &none     &none   &none      &kp END   &trans
-                  &mkp LCLK  &trans  &trans  &trans           &mmv MOVE_RIGHT  &kp INS   &kp DEL   &trans
+&kp LG(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5        &trans  &kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8       &kp NUMBER_9   &kp NUMBER_0   &trans
+&trans     &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &trans
+&trans     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE      &trans  &kp RIGHT_BRACE    &kp F1           &kp F2             &kp F3         &kp F4         &trans
+                         &trans        &trans        &trans        &trans              &trans  &trans             &trans           &trans
+                                                                                       &trans
             >;
 
             label = "Modify";
@@ -155,10 +157,11 @@
 
         Flash {
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
-&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
-&trans  &none      &none      &none         &none      &kp GRAVE    &mmv MOVE_LEFT   &kp UNDER  &none      &kp LBRC  &kp RBRC  &kp PIPE   &trans
-                   &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+&flash_macro  &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans        &trans  &trans  &trans  &trans  &trans    &trans  &bt BT_CLR    &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+                      &trans  &trans  &trans  &trans    &trans  &trans        &trans        &trans
+                                                        &trans
             >;
 
             label = "Flash";
@@ -166,16 +169,29 @@
 
         Rgb {
             bindings = <
-&trans  &kp F1           &kp F2          &kp F3             &kp F4            &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &trans
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &out OUT_USB      &out OUT_USB       &mmv MOVE_DOWN   &bootloader      &trans           &kp F11          &kp F12          &kp PRINTSCREEN  &trans
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug rgb_spi  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp SCROLLLOCK   &trans
-                         &mkp LCLK       &trans             &trans            &trans             &mmv MOVE_RIGHT  &trans           &trans           &trans
+&ext_power EP_TOG  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPI    &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
+&trans             &trans  &trans  &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
+&trans             &trans  &trans  &trans  &trans           &trans             &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
+                           &to 0   &trans  &trans           &trans             &rgb_ug RGB_SAD  &trans           &trans           &trans
+                                                                               &rgb_ug RGB_TOG
             >;
 
             label = "Rgb";
             sensor-bindings = <&rgb_encoder &scroll_encoder>;
         };
 
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans     &trans       &mmv MOVE_UP     &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &mmv MOVE_DOWN   &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans       &mmv MOVE_LEFT   &trans     &trans     &trans  &trans  &trans  &trans
+                &trans  &trans  &mkp LCLK  &mkp RCLK    &mmv MOVE_RIGHT  &mkp LCLK  &mkp RCLK  &trans
+                                                        &to 0
+            >;
+
+            label = "Mouse";
+            sensor-bindings = <&scroll_encoder>;
+        };
     };
 
     conditional_layers {
