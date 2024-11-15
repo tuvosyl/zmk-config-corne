@@ -26,6 +26,20 @@
             #binding-cells = <0>;
             bindings = <&bootloader>;
         };
+
+        alt_f4: alt_f4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+            label = "ALT_F4";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -74,55 +88,18 @@
 
             tap-ms = <30>;
         };
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALT_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LA(TAB)>, <&kp LC(LA(TAB))>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-        };
-
-        left_bkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 4>;
-        };
-
-        right_bkt {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 8>;
-        };
-
-        left_par {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
-        };
-
-        right_par {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <21 22>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <29 30>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <34 35>;
-        };
-
-        bac {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <5 7>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <18 20>;
-        };
     };
 
     keymap {
