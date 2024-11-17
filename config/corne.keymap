@@ -108,6 +108,7 @@
             >;
 
             display-name = "default";
+            label = "default";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -122,6 +123,7 @@
 
             sensor-bindings = <&scroll_encoder>;
             display-name = "mouse";
+            label = "mouse";
         };
 
         colemak {
@@ -132,7 +134,9 @@
                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
                                                  &to 1
             >;
-
+			display-name = "colemak";
+            label = "colemak";
+
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -146,6 +150,7 @@
             >;
 
             display-name = "numbers";
+            label = "numbers";
         };
 
         symbols {
@@ -158,6 +163,7 @@
             >;
 
             display-name = "symbols";
+            label = "symbols";
         };
 
         function {
@@ -170,6 +176,7 @@
             >;
 
             display-name = "function";
+            label = "function";
         };
     };
 
