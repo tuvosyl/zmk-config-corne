@@ -32,18 +32,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(F4)>;
+            label = "ALT_F4";
         };
 
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TAB>;
+            label = "NEW_MACRO";
         };
     };
 
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -54,6 +57,7 @@
 
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
+            label = "LTQ";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -63,6 +67,7 @@
 
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -72,6 +77,7 @@
 
         rgb_encoder: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
@@ -86,6 +92,7 @@
 
         alt_tab: alt_tab {
             compatible = "zmk,behavior-tap-dance";
+            label = "ALT_TAB";
             #binding-cells = <0>;
             bindings = <&kp LA(TAB)>, <&kp LC(LA(TAB))>;
 
@@ -107,23 +114,21 @@
                                                                      &to 1
             >;
 
-            display-name = "default";
-            label = "default";
+            label = "default";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         mouse {
             bindings = <
-&alt_tab  &trans  &trans      &msc SCROLL_UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &mkp LCLK   &mkp MCLK         &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans      &mwh SCROLL_DOWN  &trans     &trans    &trans  &to 2   &to 2   &trans  &trans  &trans  &trans
-                  &kp K_MUTE  &trans            &trans     &trans    &trans  &trans  &trans  &trans
-                                                                     &to 0
+&alt_tab  &trans  &trans      &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &mkp LCLK   &mkp MCLK  &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans      &trans     &trans     &trans    &trans  &to 1   &to 2   &trans  &trans  &trans  &trans
+                  &kp K_MUTE  &trans     &trans     &trans    &trans  &trans  &trans  &trans
+                                                              &to 0
             >;
 
-            sensor-bindings = <&scroll_encoder>;
-            display-name = "mouse";
-            label = "mouse";
+            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            label = "mouse";
         };
 
         colemak {
@@ -132,51 +137,44 @@
 &trans  &kp A  &kp R   &kp S   &kp T   &kp D     &trans  &kp H   &kp N   &kp E   &kp I   &kp O          &trans
 &trans  &kp Z  &kp X   &kp C   &kp V   &kp B     &trans  &kp K   &kp M   &trans  &trans  &trans         &trans
                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-                                                 &to 1
+                                                 &trans
             >;
-			display-name = "colemak";
-            label = "colemak";
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         numbers {
             bindings = <
-&alt_tab  &none     &kp N7     &kp N8  &kp N9  &kp PAGE_UP      &trans  &none     &none     &none   &none      &alt_f4   &trans
-&trans    &none     &kp N4     &kp N5  &kp N6  &kp PAGE_DOWN    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans    &kp CAPS  &kp N1     &kp N2  &kp N3  &kp N0           &trans  &none     &none     &none   &none      &kp END   &trans
-                    &mkp LCLK  &trans  &trans  &trans           &trans  &kp INS   &kp DEL   &trans
-                                                                &trans
+&alt_tab  &none     &kp N7     &kp N8  &kp N9  &kp PAGE_UP      &mmv MOVE_UP     &none     &none     &none   &none      &alt_f4   &trans
+&trans    &none     &kp N4     &kp N5  &kp N6  &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans    &kp CAPS  &kp N1     &kp N2  &kp N3  &kp N0           &mmv MOVE_LEFT   &none     &none     &none   &none      &kp END   &trans
+                    &mkp LCLK  &trans  &trans  &trans           &mmv MOVE_RIGHT  &kp INS   &kp DEL   &trans
+                                                                &to 1
             >;
 
-            display-name = "numbers";
-            label = "numbers";
+            label = "numbers";
         };
 
         symbols {
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &trans  &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
-&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &trans  &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
-&trans  &none      &none      &none         &none      &kp GRAVE    &trans  &kp UNDER  &none      &kp LBRC  &kp RBRC  &kp PIPE   &trans
-                   &mkp LCLK  &trans        &trans     &trans       &trans  &kp RET    &trans     &trans
-                                                                    &trans
+&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
+&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
+&trans  &none      &none      &none         &none      &kp GRAVE    &mmv MOVE_LEFT   &kp UNDER  &none      &kp LBRC  &kp RBRC  &kp PIPE   &trans
+                   &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &kp RET    &trans     &trans
+                                                                    &to 1
             >;
 
-            display-name = "symbols";
-            label = "symbols";
+            label = "symbols";
         };
 
         function {
             bindings = <
 &flash_macro  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4  &trans
-&trans        &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &bootloader   &ext_power EP_ON  &ext_power EP_OFF  &trans        &trans        &trans
+&trans        &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &bootloader   &ext_power EP_ON  &ext_power EP_OFF  &out OUT_BLE  &out OUT_USB  &trans
 &trans        &kp F11  &kp F12  &trans  &trans  &trans     &trans  &bt BT_CLR    &trans            &trans             &trans        &trans        &bt BT_CLR_ALL
                        &trans   &trans  &trans  &trans     &trans  &trans        &trans            &trans
                                                            &trans
             >;
 
-            display-name = "function";
-            label = "function";
+            label = "function";
         };
     };
 
