@@ -120,9 +120,9 @@
 
         mouse {
             bindings = <
-&alt_tab  &trans  &trans      &msc SCROLL_UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&alt_tab  &trans  &trans      &mwh SCROLL_UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans    &trans  &mkp LCLK   &mkp MCLK         &mkp RCLK  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans      &msc SCROLL_DOWN  &trans     &trans    &trans  &to 1   &to 2   &trans  &trans  &trans  &trans
+&trans    &trans  &trans      &mwh SCROLL_DOWN  &trans     &trans    &trans  &to 1   &to 2   &trans  &trans  &trans  &trans
                   &kp K_MUTE  &trans            &trans     &trans    &trans  &trans  &trans  &trans
                                                                      &to 0
             >;
