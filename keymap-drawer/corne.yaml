@@ -41,7 +41,7 @@ layers:
   - /
   - LEFT ALT
   - MUTE
-  - LEFT GUI
+  - {t: LEFT GUI, h: LEFT ALT}
   - SPACE
   - numbers
   - '&mmv MOVE_RIGHT'
@@ -150,12 +150,12 @@ layers:
   numbers:
   - '&alt_tab'
   - ''
+  - PG UP
   - '7'
   - '8'
   - '9'
-  - PAGE UP
   - '&mmv MOVE_UP'
-  - ''
+  - PRINTSCREEN
   - ''
   - ''
   - ''
@@ -163,10 +163,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - PG DN
   - '4'
   - '5'
   - '6'
-  - PAGE DOWN
   - '&mmv MOVE_DOWN'
   - LEFT
   - DOWN
@@ -176,10 +176,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPS
+  - '0'
   - '1'
   - '2'
   - '3'
-  - '0'
   - '&mmv MOVE_LEFT'
   - ''
   - ''
