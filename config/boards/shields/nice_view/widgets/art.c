@@ -530,6 +530,6 @@ const lv_img_dsc_t mac = {
   .header.reserved = 0,
   .header.w = 140,
   .header.h = 68,
-  .data_size = 1232,
+  .data_size = 1224,
   .data = mac_map,
 };
