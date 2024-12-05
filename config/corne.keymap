@@ -1,3 +1,4 @@
+#define U_MOUSE_MOVE_MAX 1400 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 35 // 10
 
 #include <behaviors/mouse_keys.dtsi>
@@ -96,7 +97,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(TAB)>, <&kp LC(LA(TAB))>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -107,11 +108,11 @@
 
         default {
             bindings = <
-&kp TAB         &kp Q  &kp W       &kp F         &kp P      &kp G    &mmv MOVE_UP     &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp R       &kp S         &kp T      &kp D    &mmv MOVE_DOWN   &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LCTRL       &kp Z  &kp X       &kp C         &kp V      &kp B    &mmv MOVE_LEFT   &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp LEFT_ALT
-                       &kp K_MUTE  &kp LEFT_GUI  &kp SPACE  &mo 3    &mmv MOVE_RIGHT  &mo 4  &kp ENTER  &kp BACKSPACE
-                                                                     &to 1
+&kp TAB         &kp Q  &kp W       &kp F                  &kp P      &kp G    &mmv MOVE_UP     &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
+&kp LEFT_SHIFT  &kp A  &kp R       &kp S                  &kp T      &kp D    &mmv MOVE_DOWN   &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LCTRL       &kp Z  &kp X       &kp C                  &kp V      &kp B    &mmv MOVE_LEFT   &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp LEFT_ALT
+                       &kp K_MUTE  &mt LEFT_ALT LEFT_GUI  &kp SPACE  &mo 3    &mmv MOVE_RIGHT  &mo 4  &kp ENTER  &kp BACKSPACE
+                                                                              &to 1
             >;
 
             label = "default";
@@ -143,11 +144,11 @@
 
         numbers {
             bindings = <
-&alt_tab  &none     &kp N7     &kp N8  &kp N9  &kp PAGE_UP      &mmv MOVE_UP     &none     &none     &none   &none      &alt_f4   &trans
-&trans    &none     &kp N4     &kp N5  &kp N6  &kp PAGE_DOWN    &mmv MOVE_DOWN   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans    &kp CAPS  &kp N1     &kp N2  &kp N3  &kp N0           &mmv MOVE_LEFT   &none     &none     &none   &none      &kp END   &trans
-                    &mkp LCLK  &trans  &trans  &trans           &mmv MOVE_RIGHT  &kp INS   &kp DEL   &trans
-                                                                &to 1
+&alt_tab  &none     &kp PG_UP  &kp N7  &kp N8  &kp N9    &mmv MOVE_UP     &kp PRINTSCREEN  &none     &none   &none      &alt_f4   &trans
+&trans    &none     &kp PG_DN  &kp N4  &kp N5  &kp N6    &mmv MOVE_DOWN   &kp LEFT         &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&trans    &kp CAPS  &kp N0     &kp N1  &kp N2  &kp N3    &mmv MOVE_LEFT   &none            &none     &none   &none      &kp END   &trans
+                    &mkp LCLK  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp INS          &kp DEL   &trans
+                                                         &to 1
             >;
 
             label = "numbers";
