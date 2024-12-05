@@ -4,28 +4,28 @@ layers:
   - TAB
   - Q
   - W
-  - E
-  - R
-  - T
-  - '&mmv MOVE_UP'
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - G
+  - '&mmv MOVE_UP'
+  - J
+  - L
+  - U
+  - Y
+  - ;
   - ESCAPE
   - LEFT SHIFT
   - A
+  - R
   - S
+  - T
   - D
-  - F
-  - G
   - '&mmv MOVE_DOWN'
   - H
-  - J
-  - K
-  - L
-  - ;
+  - N
+  - E
+  - I
+  - O
   - ''''
   - LCTRL
   - Z
@@ -34,7 +34,7 @@ layers:
   - V
   - B
   - '&mmv MOVE_LEFT'
-  - N
+  - K
   - M
   - ','
   - .
@@ -42,11 +42,11 @@ layers:
   - LEFT ALT
   - MUTE
   - LEFT GUI
-  - numbers
   - SPACE
+  - numbers
   - '&mmv MOVE_RIGHT'
-  - {t: ENTER, h: function}
   - symbols
+  - ENTER
   - BACKSPACE
   - {t: mouse, h: toggle}
   mouse:
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: mouse, h: toggle}
-  - {t: colemak, h: toggle}
+  - {t: qwerty, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -98,32 +98,32 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  colemak:
+  qwerty:
   - {t: ▽, type: trans}
   - Q
   - W
-  - F
-  - P
-  - G
+  - E
+  - R
+  - T
   - {t: ▽, type: trans}
-  - J
-  - L
-  - U
   - Y
-  - ;
+  - U
+  - I
+  - O
+  - P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - A
-  - R
   - S
-  - T
   - D
+  - F
+  - G
   - {t: ▽, type: trans}
   - H
-  - N
-  - E
-  - I
-  - O
+  - J
+  - K
+  - L
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
@@ -132,7 +132,7 @@ layers:
   - V
   - B
   - {t: ▽, type: trans}
-  - K
+  - N
   - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -189,8 +189,8 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp LCLK'
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - '&mmv MOVE_RIGHT'
   - INS
   - DEL
@@ -241,8 +241,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_RIGHT'
-  - RET
-  - {type: held}
+  - {t: RET, type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: mouse, h: toggle}
   function:
@@ -288,7 +288,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
