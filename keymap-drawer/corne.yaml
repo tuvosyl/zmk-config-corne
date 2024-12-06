@@ -32,16 +32,16 @@ layers:
   - X
   - C
   - V
-  - B
+  - {t: B, h: LEFT ALT}
   - '&mmv MOVE_LEFT'
   - K
   - M
   - ','
   - .
   - /
-  - LEFT ALT
+  - .
   - MUTE
-  - {t: LEFT GUI, h: LEFT ALT}
+  - LEFT GUI
   - SPACE
   - numbers
   - '&mmv MOVE_RIGHT'
