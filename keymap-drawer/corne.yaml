@@ -150,41 +150,41 @@ layers:
   numbers:
   - '&alt_tab'
   - ''
-  - PG UP
   - '7'
   - '8'
   - '9'
+  - ''
   - '&mmv MOVE_UP'
   - PRINTSCREEN
   - ''
-  - ''
+  - UP
   - ''
   - '&alt_f4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - PG DN
+  - '0'
   - '4'
   - '5'
   - '6'
+  - ''
   - '&mmv MOVE_DOWN'
+  - HOME
   - LEFT
   - DOWN
-  - UP
   - RIGHT
-  - HOME
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPS
-  - '0'
   - '1'
   - '2'
   - '3'
+  - ''
   - '&mmv MOVE_LEFT'
   - INS
   - DEL
-  - ''
-  - ''
+  - PG UP
+  - PG DN
   - END
   - {t: ▽, type: trans}
   - '&mkp LCLK'
