@@ -181,8 +181,8 @@ layers:
   - '2'
   - '3'
   - '&mmv MOVE_LEFT'
-  - ''
-  - ''
+  - INS
+  - DEL
   - ''
   - ''
   - END
@@ -192,8 +192,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - '&mmv MOVE_RIGHT'
-  - INS
-  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: mouse, h: toggle}
   symbols:
@@ -230,8 +230,8 @@ layers:
   - ''
   - '`'
   - '&mmv MOVE_LEFT'
-  - _
   - ''
+  - _
   - '{'
   - '}'
   - '|'
@@ -241,7 +241,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mmv MOVE_RIGHT'
-  - {t: RET, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: mouse, h: toggle}
