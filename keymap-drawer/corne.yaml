@@ -153,12 +153,12 @@ layers:
   - '7'
   - '8'
   - '9'
-  - ''
+  - PG UP
   - '&mmv MOVE_UP'
   - PRINTSCREEN
-  - ''
+  - H
   - UP
-  - ''
+  - L
   - '&alt_f4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - ''
+  - PG DN
   - '&mmv MOVE_DOWN'
   - HOME
   - LEFT
@@ -179,12 +179,12 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ''
+  - DEL
   - '&mmv MOVE_LEFT'
   - INS
-  - DEL
-  - PG UP
-  - PG DN
+  - Sft+Gui+LEFT ARROW
+  - ''
+  - Sft+Gui+RIGHT ARROW
   - END
   - {t: ▽, type: trans}
   - '&mkp LCLK'
