@@ -158,7 +158,7 @@
             bindings = <
 &trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
 &trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
-&trans  &none      &none      &none         &none      &kp GRAVE    &mmv MOVE_LEFT   &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE   &trans
+&trans  &none      &none      &none         &kp UNDER  &kp GRAVE    &mmv MOVE_LEFT   &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE   &trans
                    &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
                                                                     &to 1
             >;
