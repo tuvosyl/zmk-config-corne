@@ -170,7 +170,7 @@
             bindings = <
 &flash_macro  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &trans
 &trans        &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &bootloader   &ext_power EP_ON  &ext_power EP_OFF  &out OUT_BLE     &out OUT_USB  &trans
-&trans        &kp F11  &kp F12  &trans  &trans  &trans     &trans  &bt BT_CLR    &rgb_ug RGB_TOG   &rgb_ug RGB_HUI    &rgb_ug RGB_BRI  &trans        &bt BT_CLR_ALL
+&trans        &kp F11  &kp F12  &trans  &trans  &trans     &trans  &bt BT_CLR    &rgb_ug RGB_TOG   &rgb_ug RGB_HUI    &rgb_ug RGB_BRI  &rgb_ug RGB_EFF        &bt BT_CLR_ALL
                        &trans   &trans  &trans  &trans     &trans  &trans        &trans            &trans
                                                            &trans
             >;
