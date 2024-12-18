@@ -283,7 +283,7 @@ layers:
   - RGB TOG
   - RGB HUI
   - RGB BRI
-  - {t: ▽, type: trans}
+  - RGB EFF
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
