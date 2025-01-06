@@ -107,9 +107,9 @@ layers:
   - PG UP
   - '&mmv MOVE_UP'
   - PRINTSCREEN
-  - H
+  - Sft+H
   - UP
-  - L
+  - Sft+L
   - '&alt_f4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -245,3 +245,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [26, 8]
+  k: Ctl+H
+- p: [26, 10]
+  k: Ctl+L
