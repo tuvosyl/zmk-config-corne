@@ -36,10 +36,10 @@ layers:
   - '&mmv MOVE_LEFT'
   - K
   - M
-  - COMMA A
+  - ','
   - .
   - /
-  - LEFT SHIFT
+  - .
   - {t: qwerty, h: toggle}
   - LEFT GUI
   - SPACE
@@ -47,7 +47,7 @@ layers:
   - '&mmv MOVE_RIGHT'
   - symbols
   - ENTER
-  - BACKSPACEA
+  - BACKSPACE
   - '&mkp LCLK'
   qwerty:
   - {t: ▽, type: trans}
