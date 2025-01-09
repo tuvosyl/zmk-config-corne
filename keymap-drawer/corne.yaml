@@ -32,14 +32,14 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: LEFT ALT}
+  - B
   - '&mmv MOVE_LEFT'
   - K
   - M
   - ','
   - .
   - /
-  - .
+  - RIGHT ALT
   - {t: qwerty, h: toggle}
   - LEFT GUI
   - SPACE
@@ -168,7 +168,7 @@ layers:
   - /
   - '~'
   - '&mmv MOVE_DOWN'
-  - ''
+  - '&gmail'
   - '='
   - '['
   - ']'
