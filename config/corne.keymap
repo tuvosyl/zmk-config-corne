@@ -127,11 +127,11 @@
 
         default {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F         &kp P      &kp G             &mmv MOVE_UP     &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D             &mmv MOVE_DOWN   &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &mt LEFT_ALT B    &mmv MOVE_LEFT   &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp DOT
-                       &to 1  &kp LEFT_GUI  &kp SPACE  &mo 2             &mmv MOVE_RIGHT  &mo 3  &kp ENTER  &kp BACKSPACE
-                                                                         &mkp LCLK
+&kp TAB         &kp Q  &kp W  &kp F         &kp P      &kp G    &mmv MOVE_UP     &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D    &mmv MOVE_DOWN   &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &kp B    &mmv MOVE_LEFT   &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                       &to 1  &kp LEFT_GUI  &kp SPACE  &mo 2    &mmv MOVE_RIGHT  &mo 3  &kp ENTER  &kp BACKSPACE
+                                                                &mkp LCLK
             >;
 
             label = "default";
@@ -164,7 +164,7 @@
         symbols {
             bindings = <
 &trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
-&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &none      &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
+&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &gmail     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
 &trans  &trans     &none      &none         &kp UNDER  &kp GRAVE    &mmv MOVE_LEFT   &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE   &trans
                    &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
                                                                     &trans
