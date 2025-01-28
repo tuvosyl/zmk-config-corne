@@ -133,9 +133,9 @@ layers:
   - DEL
   - '&mmv MOVE_LEFT'
   - INS
-  - Sft+Gui+LEFT ARROW
   - ''
-  - Sft+Gui+RIGHT ARROW
+  - ','
+  - .
   - END
   - {t: ▽, type: trans}
   - '&mkp LCLK'
