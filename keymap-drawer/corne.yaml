@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   default:
   - TAB
@@ -227,8 +227,8 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - BT CLR
   - {t: ▽, type: trans}
   - BT CLR
   - RGB TOG
