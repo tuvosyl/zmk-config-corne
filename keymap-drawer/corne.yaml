@@ -41,7 +41,7 @@ layers:
   - /
   - RIGHT ALT
   - {t: qwerty, h: toggle}
-  - {t: LGUI, h: LEFT ALT}
+  - '&gui_alt_dance'
   - SPACE
   - numbers
   - '&mmv MOVE_RIGHT'
