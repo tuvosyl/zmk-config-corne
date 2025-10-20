@@ -41,8 +41,8 @@ layers:
   - /
   - RIGHT ALT
   - {t: qwerty, h: toggle}
-  - LEFT GUI
   - '&gui_alt_dance'
+  - SPACE
   - numbers
   - '&mmv MOVE_RIGHT'
   - symbols
