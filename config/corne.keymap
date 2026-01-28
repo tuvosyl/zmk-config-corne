@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &msc {
@@ -106,6 +107,7 @@
 
             tapping-term-ms = <200>;
         };
+
         gui_alt_dance: gui_alt_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "GUI_ALT_DANCE";
@@ -133,15 +135,15 @@
 
         default {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F         &kp P      &kp G    &mmv MOVE_UP     &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D    &mmv MOVE_DOWN   &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &kp B    &mmv MOVE_LEFT   &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                       &to 1  &kp LEFT_GUI &kp SPACE  &mo 2    &mmv MOVE_RIGHT  &mo 3  &kp ENTER  &kp BACKSPACE
+&kp TAB         &kp Q  &kp W  &kp F         &kp P      &kp G    &kp LEFT_ALT    &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D    &mmv MOVE_DOWN  &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &kp B    &kp LCTRL       &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                       &to 1  &kp LEFT_GUI  &kp SPACE  &mo 2    &kp LEFT_SHIFT  &mo 3  &kp ENTER  &kp BACKSPACE
                                                                 &mkp LCLK
             >;
 
             label = "default";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
         qwerty {
@@ -156,10 +158,10 @@
 
         numbers {
             bindings = <
-&alt_tab  &none     &kp N7     &kp N8  &kp N9  &kp PG_UP    &mmv MOVE_UP     &kp PRINTSCREEN  &kp LS(H)  &kp UP     &kp LS(L)  &alt_f4  &trans
-&trans    &kp N0    &kp N4     &kp N5  &kp N6  &kp PG_DN    &mmv MOVE_DOWN   &kp HOME         &kp LEFT   &kp DOWN   &kp RIGHT  &none    &trans
-&trans    &kp CAPS  &kp N1     &kp N2  &kp N3  &kp DEL      &mmv MOVE_LEFT   &kp INS          &none      &kp COMMA  &kp DOT    &kp END  &trans
-                    &mkp LCLK  &trans  &trans  &trans       &mmv MOVE_RIGHT  &trans           &trans     &trans
+&alt_tab  &none     &kp N7     &kp N8  &kp N9  &kp PG_UP    &trans  &kp PRINTSCREEN  &kp LS(H)  &kp UP     &kp LS(L)  &trans   &trans
+&trans    &kp N0    &kp N4     &kp N5  &kp N6  &kp PG_DN    &trans  &kp HOME         &kp LEFT   &kp DOWN   &kp RIGHT  &none    &trans
+&trans    &kp CAPS  &kp N1     &kp N2  &kp N3  &kp DEL      &trans  &kp INS          &none      &kp COMMA  &kp DOT    &kp END  &trans
+                    &mkp LCLK  &trans  &trans  &trans       &trans  &trans           &trans     &trans
                                                             &trans
             >;
 
@@ -169,10 +171,10 @@
 
         symbols {
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
-&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &mmv MOVE_DOWN   &gmail     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
-&trans  &trans     &none      &none         &kp UNDER  &kp GRAVE    &mmv MOVE_LEFT   &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE   &trans
-                   &mkp LCLK  &trans        &trans     &trans       &mmv MOVE_RIGHT  &trans     &trans     &trans
+&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT    &trans  &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp ASTRK  &trans
+&trans  &kp MINUS  &kp PLUS   &kp ASTERISK  &kp SLASH  &kp TILDE    &trans  &gmail     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH   &trans
+&trans  &trans     &none      &none         &kp UNDER  &kp GRAVE    &trans  &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp PIPE   &trans
+                   &mkp LCLK  &trans        &trans     &trans       &trans  &trans     &trans     &trans
                                                                     &trans
             >;
 
@@ -182,11 +184,11 @@
 
         function {
             bindings = <
-&flash_macro  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4     &trans
-&trans        &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &trans  &bootloader   &ext_power EP_ON  &ext_power EP_OFF  &out OUT_BLE     &out OUT_USB     &trans
-&trans        &kp F11  &kp F12  &trans  &bt BT_CLR_ALL  &bt BT_CLR     &trans  &bt BT_CLR    &rgb_ug RGB_TOG   &rgb_ug RGB_HUI    &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &bt BT_CLR_ALL
-                       &trans   &trans  &trans  &trans     &trans  &trans        &trans            &trans
-                                                           &trans
+&flash_macro  &kp F1   &kp F2   &kp F3  &kp F4          &kp F5        &trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4     &trans
+&trans        &kp F6   &kp F7   &kp F8  &kp F9          &kp F10       &trans  &bootloader   &ext_power EP_ON  &ext_power EP_OFF  &out OUT_BLE     &out OUT_USB     &trans
+&trans        &kp F11  &kp F12  &trans  &bt BT_CLR_ALL  &bt BT_CLR    &trans  &bt BT_CLR    &rgb_ug RGB_TOG   &rgb_ug RGB_HUI    &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &bt BT_CLR_ALL
+                       &trans   &trans  &trans          &trans        &trans  &trans        &trans            &trans
+                                                                      &trans
             >;
 
             label = "function";
