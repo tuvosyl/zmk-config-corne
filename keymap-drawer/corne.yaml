@@ -7,7 +7,7 @@ layers:
   - F
   - P
   - G
-  - '&mmv MOVE_UP'
+  - LEFT ALT
   - J
   - L
   - U
@@ -33,7 +33,7 @@ layers:
   - C
   - V
   - B
-  - '&mmv MOVE_LEFT'
+  - LCTRL
   - K
   - M
   - ','
@@ -44,7 +44,7 @@ layers:
   - LEFT GUI
   - SPACE
   - numbers
-  - '&mmv MOVE_RIGHT'
+  - LEFT SHIFT
   - symbols
   - ENTER
   - BACKSPACE
@@ -105,12 +105,12 @@ layers:
   - '8'
   - '9'
   - PG UP
-  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
   - PRINTSCREEN
   - Sft+H
   - UP
   - Sft+L
-  - '&alt_f4'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
@@ -118,7 +118,7 @@ layers:
   - '5'
   - '6'
   - PG DN
-  - '&mmv MOVE_DOWN'
+  - {t: ▽, type: trans}
   - HOME
   - LEFT
   - DOWN
@@ -131,7 +131,7 @@ layers:
   - '2'
   - '3'
   - DEL
-  - '&mmv MOVE_LEFT'
+  - {t: ▽, type: trans}
   - INS
   - ''
   - ','
@@ -142,7 +142,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,7 +154,7 @@ layers:
   - '#'
   - $
   - '%'
-  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
   - ^
   - '&'
   - (
@@ -167,7 +167,7 @@ layers:
   - '*'
   - /
   - '~'
-  - '&mmv MOVE_DOWN'
+  - {t: ▽, type: trans}
   - '&gmail'
   - '='
   - '['
@@ -180,7 +180,7 @@ layers:
   - ''
   - _
   - '`'
-  - '&mmv MOVE_LEFT'
+  - {t: ▽, type: trans}
   - ''
   - _
   - '{'
@@ -191,7 +191,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
