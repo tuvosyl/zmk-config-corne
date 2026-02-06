@@ -134,7 +134,7 @@
         default {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp F         &kp P      &kp G    &kp LEFT_ALT    &kp J  &kp L      &kp U          &kp Y    &kp SEMI  &kp ESCAPE
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D    &mmv MOVE_DOWN  &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
+&kp LEFT_SHIFT  &kp A  &kp R  &kp S         &kp T      &kp D    &mmv TAB  &kp H  &kp N      &kp E          &kp I    &kp O     &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp V      &kp B    &kp LCTRL       &kp K  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_ALT
                        &to 1  &kp LEFT_GUI  &kp SPACE  &mo 2    &kp LEFT_SHIFT  &mo 3  &kp ENTER  &kp BACKSPACE
                                                                 &mkp LCLK
