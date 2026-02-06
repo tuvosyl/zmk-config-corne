@@ -20,7 +20,7 @@ layers:
   - S
   - T
   - D
-  - '&mmv MOVE_DOWN'
+  - '&mmv TAB'
   - H
   - N
   - E
