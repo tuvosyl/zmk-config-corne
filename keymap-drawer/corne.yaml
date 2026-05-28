@@ -42,7 +42,7 @@ layers:
   - RIGHT ALT
   - {t: qwerty, h: toggle}
   - LEFT GUI
-  - {t: SPACE, h: LEFT ALT}
+  - SPACE
   - numbers
   - LEFT SHIFT
   - symbols
